@@ -4,12 +4,12 @@ module Bubbler
   module Api
     require 'bubbler/railtie' if defined?(Rails)
 
-    def self.post(results)
-      build_coverage_hash(results.as_json)
+    def self.post(simplecov_results)
+      build_coverage_hash(simplecov_results.as_json)
     end
 
-    def build_coverage_hash
-
+    def build_coverage_hash(simplecov_results)
+      # simplecov_results.merge()
     end
   end
 end
