@@ -10,7 +10,7 @@ module Bubbler
     def self.post(simplecov_results)
       body = request_body(simplecov_results.as_json)
 
-      uri = URI('http://localhost:4000/api/coverage/simplecov')
+      uri = URI('http://bubbler-dev.us-west-2.elasticbeanstalk.com/api/coverage/simplecov')
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = false
 
