@@ -19,7 +19,11 @@ module Bubbler
           'Content-Type' => 'application/json'
         }
       )
-
+      puts body
+      if body[:results].nil?
+        puts "No results found from SimpleCov"
+        return
+      end
       request.body = body.to_json
       response = http.request(request)
     end
