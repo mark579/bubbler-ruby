@@ -1,5 +1,5 @@
 # lib/railtie.rb
-require 'bubbler'
+require 'bubbler_ruby'
 require 'rails'
 
 module Bubbler

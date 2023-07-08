@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "lib/bubbler/version"
+require_relative "lib/bubbler_ruby/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "bubbler"
+  spec.name = "bubbler_ruby"
   spec.version = Bubbler::VERSION
   spec.authors = ["Mark Davenport"]
   spec.email = ["markadavenport@gmail.com"]

@@ -5,7 +5,7 @@ require 'net/http'
 
 module Bubbler
   module Api
-    require 'bubbler/railtie' if defined?(Rails)
+    require 'bubbler_ruby/railtie' if defined?(Rails)
 
     def self.post(simplecov_results)
       body = request_body(simplecov_results.as_json)

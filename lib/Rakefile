@@ -1,5 +1,5 @@
 # lib/Rakefile
-require 'bubbler'
+require 'bubbler_ruby'
 
 path = File.expand_path(__dir__)
 Dir.glob("#{path}/tasks/**/*.rake").each { |f| import f }
